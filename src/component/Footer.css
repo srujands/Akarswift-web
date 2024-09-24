@@ -1,0 +1,197 @@
+
+.footer {
+  background: black;
+  color: white;
+  padding: 40px 0;
+  overflow: hidden;
+}
+
+
+.footer-content {
+  
+  z-index: 2;
+}
+
+
+.footer-content .container{
+    background: black;
+}
+  
+  .footer h5 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f8f9fa;
+    padding-bottom: 10px;
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+  
+  .footer .nav-link {
+    color: #aaa;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .nav-link:hover {
+    color: #D48A00
+  }
+  
+  .footer .list-unstyled li {
+    margin-bottom: 0px;
+  }
+  
+  .footer .d-flex a {
+    color: #aaa;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  
+  .footer .d-flex a:hover {
+    color: #fff;
+    color: #D48A00
+  } 
+  
+  .footer .text-center p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #ccc;
+  }
+  
+  .footer .social-icons a {
+    font-size: 0.8rem;
+    transition: color 0.3s ease;
+    padding: 0.5rem;
+  }
+  
+  .footer .social-icons .facebook {
+    color: white; 
+}
+
+.footer .footer-links:hover{
+  color: #D48A00;
+}
+
+
+.footer .social-icons .facebook:hover {
+    color: #3b5998; /* Facebook's brand color on hover */
+}
+
+.footer .social-icons .faX {
+    color: white; /* Initial color */
+    
+    
+}
+
+.footer .social-icons .faX:hover {
+  color: white
+
+  ;/* Twitter's brand color on hover */
+}
+
+.footer .social-icons .linkedin {
+    color: white; /* Initial color */
+}
+
+.footer .social-icons .linkedin:hover {
+    color: #0077b5; /* LinkedIn's brand color on hover */
+}
+
+.footer .social-icons .instagram {
+    color: white; /* Initial color */
+}
+
+.footer .social-icons .instagram:hover {
+  color: #D93F6C;
+}
+
+
+
+
+
+  
+  .footer .row-divider {
+    border-top: 2px solid #444;
+    margin: 20px 0;
+  }
+  
+  .footer .overlay {
+    content: "";
+    /* background: rgba(255, 255, 255, 0.05); */
+    /* background-color: black; */
+    /* position: absolute; */
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+  
+
+  
+  @media (max-width: 768px) {
+    .footer {
+      text-align: center;
+    }
+  
+    .footer .col-md-4 {
+      margin-bottom: 20px;
+    }
+  
+    .footer .d-flex {
+      justify-content: center;
+    }
+  }
+  
+
+  .footer-links{
+    text-decoration: none;
+    color: white;
+    cursor: 'pointer'
+  }
+
+
+  .footer-links:hover{
+    text-decoration: none;
+    color: blueviolet;
+    cursor: 'pointer'
+  }
+
+
+
+
+
+
+
+  /* Responsive Design */
+
+/* Adjustments for tablets and smaller devices */
+@media (max-width: 768px) {
+  .footer {
+    text-align: center;
+  }
+
+  .footer .col-md-4 {
+    margin-bottom: 20px;
+  }
+
+  .footer .d-flex {
+    justify-content: center;
+  }
+}
+
+/* Additional adjustments for very small screens */
+@media (max-width: 576px) {
+  .footer h5 {
+    font-size: 1.3rem; /* Smaller font size for headings */
+  }
+
+  .footer p {
+    font-size: 0.85rem; /* Smaller font size for paragraphs */
+  }
+
+  .footer .d-flex a {
+    font-size: 1rem; /* Smaller font size for social icons */
+  }
+}

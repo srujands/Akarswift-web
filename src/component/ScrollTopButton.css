@@ -1,0 +1,44 @@
+/* Scroll-to-Top Button Styling */
+.scroll-to-top-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: none; /* Hide the button initially */
+  z-index: 1000; /* Ensure it stays on top */
+  transition: opacity 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+/* Show Button When Active */
+.scroll-to-top-button.show {
+  display: block; /* Show the button when needed */
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .scroll-to-top-button {
+    bottom: 1.5rem;
+    right: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+  .scroll-to-top-button {
+    bottom: 1rem;
+    right: 1rem;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+  }
+}

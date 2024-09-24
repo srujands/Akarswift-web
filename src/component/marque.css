@@ -1,0 +1,37 @@
+.marquee-container {
+    width: 100%; /* Adjust to fit your layout */
+    overflow: hidden;
+    white-space: nowrap;
+    background-color:  black ;/* Optional: background color */
+    vertical-align: middle;
+  }
+  
+  .marquee-content {
+    vertical-align: middle;
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .marquee-logo {
+    height: 60px; /* Adjust the height as needed */
+    vertical-align: middle;
+    margin-right: 15px; /* Spacing between logo and text */
+  }
+  
+  .marquee-text {
+    font-size: 24px; /* Adjust font size */
+    font-weight: bold; /* Optional: make text bold */
+    vertical-align: middle;
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  

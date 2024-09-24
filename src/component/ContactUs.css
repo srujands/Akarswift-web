@@ -1,0 +1,82 @@
+.container {
+  /* background: linear-gradient(135deg, #f0f0f0 0%, #d1e8e4 100%); */
+  background: black;
+  /* border-radius: 1px;
+  border: 0.1px solid white;  */
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-weight: bold;
+}
+
+#email-error {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+button.btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+button.btn:hover {
+  background-color: #45a049;
+}
+
+
+/* Responsive Design */
+
+/* Adjustments for tablets and smaller laptops */
+@media (max-width: 992px) {
+  .container {
+    padding: 1.5rem; /* Reduced padding for smaller screens */
+  }
+
+  .form-label {
+    font-size: 0.95rem; /* Slightly smaller font size */
+  }
+
+  button.btn {
+    padding: 0.7rem 1.3rem; /* Adjust button padding */
+    font-size: 0.95rem; /* Slightly smaller font size */
+  }
+}
+
+/* Adjustments for mobile devices */
+@media (max-width: 768px) {
+  .container {
+    padding: 1.25rem; /* Further reduced padding for mobile */
+  }
+
+  .form-label {
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+
+  button.btn {
+    padding: 0.65rem 1.2rem; /* Further adjust button padding */
+    font-size: 0.9rem; /* Smaller font size for mobile */
+  }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 576px) {
+  .container {
+    padding: 1rem; /* Minimal padding for very small screens */
+  }
+
+  .form-label {
+    font-size: 0.85rem; /* Further reduced font size */
+  }
+
+  button.btn {
+    padding: 0.6rem 1rem; /* Minimal padding for buttons */
+    font-size: 0.85rem; /* Further reduced font size */
+  }
+}

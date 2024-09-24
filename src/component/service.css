@@ -1,0 +1,80 @@
+/* Ensure Equal Height for Cards */
+.equal-height-card {
+  height: 100%;
+}
+
+/* Styling for Card Body */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-style: normal;
+  padding: 1rem; /* Add padding for better spacing */
+  box-sizing: border-box; /* Ensure padding is included in total height */
+}
+
+/* Body Background */
+body {
+  background-color: black;
+}
+
+/* Heading Style */
+.h1 {
+  text-decoration-color: white; /* Ensure text decoration color is white */
+}
+
+/* Card Title Styling */
+.card-title {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bolder;
+  margin-bottom: 0.5rem; /* Space below the title */
+}
+
+/* Card Text Styling */
+.card-text {
+  font-weight: 400;
+  font-size: 1rem; /* Adjust font size for readability */
+}
+
+/* Card Body Hover Effect */
+.card-body:hover {
+  box-shadow: 0 8px 20px #D48A00; /* Apply box-shadow on hover */
+}
+
+/* Card Footer Hover Effect */
+.card-footer:hover {
+  box-shadow: 0 8px 10px #D48A00; /* Apply box-shadow on hover */
+}
+
+/* Responsive Adjustments */
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .card-title {
+    font-size: 1.25rem; /* Adjust font size for smaller screens */
+  }
+
+  .card-text {
+    font-size: 0.95rem; /* Adjust font size */
+    text-align: justify;
+  }
+
+  .card-body {
+    padding: 0.75rem; /* Adjust padding */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  .card-title {
+    font-size: 1.1rem; /* Further adjust font size */
+  }
+
+  .card-text {
+    font-size: 0.9rem; /* Further adjust font size */
+  }
+
+  .card-body {
+    padding: 0.5rem; /* Further adjust padding */
+  }
+}

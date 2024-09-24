@@ -1,0 +1,170 @@
+.hover-card {
+  height: 300px;
+  border-radius: 10px;
+  border: 1px solid white;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  position: relative;
+  background-color: #000;
+  margin: 10px 0; /* Add margin to create space between cards */
+}
+
+.hover-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.hover-card:hover img {
+  opacity: 1;
+}
+
+.hover-card .card-img-overlay {
+  transition: background-color 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.hover-card:hover .card-img-overlay {
+  /* background-color: rgba(212, 138, 0, 0.7); */
+  background-color: rgba(0, 123, 255, 0.7);
+}
+
+.hover-card .card-title,
+.hover-card .card-text {
+  color: #fff;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
+  z-index: 2;
+}
+
+.hover-card:hover {
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .hover-card {
+    height: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hover-card {
+    height: 250px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hover-card {
+    height: 220px;
+  }
+
+  .hover-card .card-title {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+  }
+
+  .hover-card .card-text {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .hover-card {
+    height: 180px;
+  }
+
+  .hover-card .card-title {
+    font-size: 1rem; /* Further adjust font size */
+  }
+
+  .hover-card .card-text {
+    font-size: 0.85rem; /* Further adjust font size */
+  }
+}
+
+@media (max-width: 400px) {
+  .hover-card {
+    height: 160px;
+  }
+
+  .hover-card .card-title {
+    font-size: 0.875rem; /* Adjust font size for extra small screens */
+  }
+
+  .hover-card .card-text {
+    font-size: 0.75rem; /* Adjust font size for extra small screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .hover-card {
+    height: 140px; /* Further reduce height for very small screens */
+  }
+
+  .hover-card .card-title {
+    font-size: 0.75rem; /* Further adjust font size */
+  }
+
+  .hover-card .card-text {
+    font-size: 0.5rem; /* Further adjust font size for small screens */
+  }
+
+  .hover-card .card-img-overlay {
+    padding: 10px; /* Add padding to ensure text has breathing space */
+  }
+}
+
+
+@media (max-width: 280px) {
+  .hover-card {
+    height: 120px; /* Further reduce the card height */
+  }
+
+  .hover-card .card-title {
+    font-size: 0.7rem; /* Smaller font size for tiny screens */
+  }
+
+  .hover-card .card-text {
+    font-size: 0.4rem; /* Adjust font size for very small screens */
+  }
+
+  .hover-card .card-img-overlay {
+    padding: 7px; /* Add padding to ensure text doesn't touch edges */
+  }
+
+  .hover-card img {
+    opacity: 1; /* Ensure image is fully visible as hover effect may be less useful */
+  }
+}
+
+
+
+@media (max-width: 240px) {
+  .hover-card {
+    height: 100px; /* Further reduce the card height */
+  }
+
+  .hover-card .card-title {
+    font-size: 0.65rem; /* Adjust font size for extremely small screens */
+  }
+
+  .hover-card .card-text {
+    font-size: 0.3rem; /* Adjust font size for extremely small screens */
+  }
+
+  .hover-card .card-img-overlay {
+    padding: 3px; /* Reduce padding even more to fit the text */
+  }
+
+  .hover-card img {
+    object-fit: cover; /* Ensure the image fills the available space properly */
+    opacity: 1; /* Ensure the image is fully visible */
+  }
+
+  /* Ensure that the card remains visually appealing */
+  .hover-card:hover {
+    box-shadow: none; /* Disable shadow to avoid any overflow issues */
+  }
+}

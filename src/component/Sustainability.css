@@ -1,0 +1,107 @@
+.sustainability-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #ecf0f1;
+
+    /* box-shadow: 0 20px 20px lemonchiffon; */
+    background: #ecf0f1;
+    font-weight:300;
+    text-justify: auto;
+    text-decoration: solid;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .sustainability-icon {
+    font-size: 2rem;
+    color: #4caf50; /* Green color for sustainability */
+    margin-right: 15px;
+    background: #ecf0f1;
+  }
+  
+  .sustainability-content {
+    flex: 1;
+    background: #ecf0f1;
+  }
+  
+  .sustainability-content h5 {
+    margin-bottom: 10px;
+    font-weight: bold;
+    background: #ecf0f1;
+  }
+  
+  .sustainability-content p {
+    margin: 0;
+    background: #ecf0f1;
+    text-align: justify;
+  }
+  
+
+  .card-body {
+    background: #ecf0f1;
+
+  }
+
+
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black; /* Sets the background color of the icon */
+  border-radius: 50%; /* Optional: makes the background round */
+}
+
+.carousel-control-prev-icon::before,
+.carousel-control-next-icon::before {
+  color: white; /* Sets the color of the icon */
+  font-size: 1.5rem; /* Optional: adjust icon size if needed */
+}
+
+
+
+
+/* Responsive Adjustments */
+
+/* Smaller Tablets and Large Phones */
+@media (max-width: 768px) {
+  .sustainability-item {
+    flex-direction: column; /* Stack icon and content vertically */
+    align-items: flex-start; /* Align items to the start */
+  }
+
+  .sustainability-icon {
+    margin-right: 0; /* Remove right margin */
+    margin-bottom: 10px; /* Add margin below the icon */
+  }
+
+  .sustainability-content h5 {
+    font-size: 1.25rem; /* Adjust font size */
+  }
+
+  .sustainability-content p {
+    font-size: 0.95rem; /* Adjust font size */
+  }
+
+  .card-body {
+    padding: 0.75rem; /* Adjust padding */
+  }
+}
+
+/* Small Phones */
+@media (max-width: 576px) {
+  .sustainability-icon {
+    font-size: 1.5rem; /* Further reduce icon size */
+  }
+
+  .sustainability-content h5 {
+    font-size: 1rem; /* Further reduce font size */
+  }
+
+  .sustainability-content p {
+    font-size: 0.85rem; /* Further reduce font size */
+  }
+
+  .card-body {
+    padding: 0.5rem; /* Further adjust padding */
+  }
+}

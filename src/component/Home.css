@@ -1,0 +1,125 @@
+/* Container for the Video Background */
+.relative-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Default Styling */
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  text-align: center;
+}
+
+/* For tablets and smaller devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .text-overlay {
+    padding: 15px;
+    font-size: 0.9rem; /* Adjust text size for smaller screens */
+  }
+}
+
+/* For mobile devices (max-width: 576px) */
+@media (max-width: 576px) {
+  .text-overlay {
+    padding: 8px;
+    font-size: 0.7rem; /* Further adjust text size for very small screens */
+  }
+}
+
+/* For larger screens (min-width: 1200px) */
+@media (min-width: 1200px) {
+  .text-overlay {
+    padding: 30px; /* Increase padding for larger screens */
+    font-size: 1.2rem; /* Increase text size for larger screens */
+  }
+}
+
+
+/* Mission Heading Styling */
+.mission h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff; /* White text for contrast */
+  margin-bottom: 20px;
+}
+
+/* Mission Paragraph Styling */
+.mission p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #f8f9fa; /* Light text color for readability */
+  max-width: 800px; /* Limit width for better readability */
+  margin: 0 auto;
+}
+
+/* Responsive Adjustments */
+
+/* Adjustments for Tablets and Smaller Devices */
+
+
+
+
+
+@media (max-width: 992px) {
+  .mission h3 {
+    font-size: 2rem; /* Reduce heading size */
+  }
+
+  .mission p {
+    font-size: 1.1rem; /* Slightly reduce paragraph size */
+  }
+}
+
+/* Adjustments for Small Screens */
+@media (max-width: 768px) {
+  .mission h3 {
+    font-size: 1.8rem; /* Further reduce heading size */
+  }
+
+  .mission p {
+    font-size: 1rem; /* Reduce paragraph size */
+    max-width: 90%; /* Increase text width on small screens */
+  }
+
+  .text-overlay {
+    padding: 15px; /* Reduce padding */
+  }
+}
+
+/* Adjustments for Extra Small Screens */
+@media (max-width: 576px) {
+  .mission h3 {
+    font-size: 1.6rem; /* Further reduce heading size */
+  }
+
+  .mission p {
+    font-size: 0.9rem; /* Further reduce paragraph size */
+    max-width: 100%; /* Full width for text on very small screens */
+  }
+
+  .text-overlay {
+    padding: 10px; /* Further reduce padding */
+  }
+}
